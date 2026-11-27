@@ -20,3 +20,12 @@
 .cover-book { background: linear-gradient(135deg,#343d49,#b99d76); }
 .cover-realestate-motion { background: linear-gradient(135deg,#253e4b,#7e9ca2); }
 .cover-portfolio .cover-title, .cover-naman .cover-title, .cover-hotel .cover-title, .cover-brochure .cover-title, .cover-mantri .cover-title, .cover-arjun .cover-title, .cover-sammvriddhi .cover-title, .cover-life .cover-title, .cover-book .cover-title, .cover-realestate-motion .cover-title { color:#fff; }
+
+/* Approved content refinements — preserve the existing visual system */
+.about-stamp{position:relative;transform:none;overflow:hidden;background:transparent}
+.about-stamp strong{font:700 58px/.9 var(--display);letter-spacing:-.11em;color:var(--ink);z-index:1}
+.about-stamp .stamp-orbit{position:absolute;inset:0;display:grid;place-items:center;font:7px var(--mono);letter-spacing:.14em;color:#73776f;white-space:nowrap;animation:stamp-rotate 24s linear infinite}
+.about-stamp i{position:absolute;bottom:23px;font-style:normal;font-size:19px;color:#8eaa35}
+@keyframes stamp-rotate{to{transform:rotate(360deg)}}
+.stat small{display:block;max-width:190px;line-height:1.55}
+@media(max-width:760px){.about-stamp .stamp-orbit{font-size:6px}.stat small{max-width:150px}.contact-bottom p{max-width:100%}}
